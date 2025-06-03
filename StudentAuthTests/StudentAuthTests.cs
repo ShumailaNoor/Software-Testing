@@ -29,7 +29,7 @@ public class Tests
     [Test]
     public void Register_WithShortPassword_ReturnsFalse()
     {
-        var user = new User { username = "Ali", password = "" };
+        var user = new User { username = "Ali", password = "1272722" };
         var result = service.Register(user);
         Assert.IsFalse(result);
     }
